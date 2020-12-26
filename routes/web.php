@@ -51,8 +51,4 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::get('/penelitian', 'PenelitianController@index');
         Route::get('/ppm', 'PengabdianController@index');
     });
-    // berita
-    Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
-        Route::get('/mobil-listrik', 'mobillistrikController@index');
-    });
 });
