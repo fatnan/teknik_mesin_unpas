@@ -70,7 +70,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">              
                             <div class="item-img">
-                                <a href="pmb-fakultas-teknik-universitas-pasundan.html">
+                                <a href="/frontend/berita/pmb-fakultas-teknik-universitas-pasundan.html-fakultas-teknik-universitas-pasundan.html">
                                     <img src="/images/banner-pendaftaran-MHS-baru.jpeg" alt="" width="100%"
                                         height="200px">
                                 </a>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="container">
                                 <div class="row">
-                                    <a href="pmb-fakultas-teknik-universitas-pasundan.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/frontend/berita/pmb-fakultas-teknik-universitas-pasundan.html-fakultas-teknik-universitas-pasundan.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="mobil-listrik.html">
+                            <a href="/berita/mobil-listrik">
                                 <img src="/images/IIMS_LISTRIK1_MABUA_MEDIA.jpg" alt="" width="100%"
                                     height="200px">
                             </a>
@@ -111,7 +111,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="mobil-listrik.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/frontend/berita/mobil-listrik.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="teknik-mesin-unpas-ciptakan-traktor-portable.html">
+                            <a href="/frontend/berita/teknik-mesin-unpas-ciptakan-traktor-portable.html">
                                 <img src="/images/Screen-Shot-2019-07-26-at-10.36.57-300x229.png" alt=""
                                     width="100%">
                             </a>
@@ -136,7 +136,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="teknik-mesin-unpas-ciptakan-traktor-portable.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/frontend/berita/teknik-mesin-unpas-ciptakan-traktor-portable.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>                      
@@ -144,7 +144,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="Projek-Sweeper-Mahasiswa-Mesin.html">
+                            <a href="/frontend/berita/Projek-Sweeper-Mahasiswa-Mesin.html">
                                 <img src="/images/swipper.jpg" alt="" width="100%">
                             </a>
                             </div>
@@ -159,7 +159,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="Projek-Sweeper-Mahasiswa-Mesin.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/frontend/berita/Projek-Sweeper-Mahasiswa-Mesin.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>                      
@@ -170,7 +170,7 @@
             <div class="container">
                 <div class="section-details row justify-content-center">
                     <div class="details-button mt-5">
-                        <a href="news.html" class="btn btn-details btn-sm ">
+                        <a href="/frontend/berita/news.html" class="btn btn-details btn-sm ">
                             Selengkapnya
                         </a>
                     </div>
@@ -342,7 +342,7 @@
                 <div class="row justify-content-center">
                     <div class="card-deck justify-content-center">
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="universitas-pasundan-profil.html">
+                            <a href="/frontend/berita/universitas-pasundan-profil.html">
                                 <img class="card-01" src="/images/profil-unpas.png" alt="" width="100%">
                             </a>
                             <a class="link" href="universitas-pasundan-profil.html" style="font-weight:bold;">Profil
@@ -354,7 +354,7 @@
 
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="pendaftaran-wisuda-online-UNPAS.html">
+                            <a href="/frontend/berita/pendaftaran-wisuda-online-UNPAS.html">
                                 <img class="card-01" src="/images/image-pendaftaran.png" alt="" width="100%">
                             </a>
 
