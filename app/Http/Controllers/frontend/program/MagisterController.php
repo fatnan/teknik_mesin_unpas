@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class MagisterController extends Controller
 {
-    public function index(){
-        return view('program.magister');
+    public function index()
+    {
+        return view('frontend.program.magister');
     }
 }

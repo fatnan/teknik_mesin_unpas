@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class PengabdianController extends Controller
 {
-    public function index(){
-        return view('tridharma.pengabdianmasyarakat');
+    public function index()
+    {
+        return view('frontend.tridharma.pengabdianmasyarakat');
     }
 }

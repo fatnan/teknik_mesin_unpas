@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class MagangController extends Controller
 {
-    public function index(){
-        return view('program.magang');
+    public function index()
+    {
+        return view('frontend.program.magang');
     }
 }
