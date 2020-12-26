@@ -7,11 +7,6 @@
                 <img class="logo-02" src="/images/Image 1.png" alt="" >
                 
             </a> 
-            <a class="search float-right mb-0">
-                <form action="">
-                    <input class="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Google ">
-                </form> 
-            </a>
             <a href="kontak.html" class="kontak-01 float-right ">
                 <i class="fas fa-envelope"> Kontak</i></a>
             <a href="https://bit.ly/357gijI" class="kontak-02 float-right mr-2">

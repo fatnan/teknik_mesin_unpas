@@ -109,7 +109,6 @@
     <div class="container pt-2 pb-2">
         <div class="row justify-content-center">
             <div class="col">
-                <img src="/images/logo footer.png"  alt="logo-Teknik-Mesin-Unpas">
                 <i class="far fa-copyright copyright-title"> Copyright 2020 All Right Reserved by Teknik Mesin UNPAS</i>
             </div>
             <div class="mr-3">
