@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class PelatihanController extends Controller
 {
-    public function index(){
-        return view('program.pelatihan');
+    public function index()
+    {
+        return view('frontend.program.pelatihan');
     }
 }

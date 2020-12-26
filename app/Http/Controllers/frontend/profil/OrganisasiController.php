@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class OrganisasiController extends Controller
 {
-    public function index(){
-        return view('profil.organisasi');
+    public function index()
+    {
+        return view('frontend.profil.organisasi');
     }
 }

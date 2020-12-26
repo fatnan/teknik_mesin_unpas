@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('about/index');
+    return view('frontend/home/home');
 });
 
 Route::group(['namespace' => 'frontend'], function () {

@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class PostDoctoralController extends Controller
 {
-    public function index(){
-        return view('pendaftaran.postdoctoral');
+    public function index()
+    {
+        return view('frontend.pendaftaran.postdoctoral');
     }
 }

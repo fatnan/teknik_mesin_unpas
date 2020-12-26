@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class SaranaController extends Controller
 {
-    public function index(){
-        return view('profil.sarana');
+    public function index()
+    {
+        return view('frontend.profil.sarana');
     }
 }

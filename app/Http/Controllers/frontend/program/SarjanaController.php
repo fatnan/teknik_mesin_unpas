@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class SarjanaController extends Controller
 {
-    public function index(){
-        return view('program.sarjana');
+    public function index()
+    {
+        return view('frontend.program.sarjana');
     }
 }

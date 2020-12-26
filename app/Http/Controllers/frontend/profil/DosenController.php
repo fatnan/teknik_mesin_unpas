@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class DosenController extends Controller
 {
-    public function index(){
-        return view('profil.dosen');
+    public function index()
+    {
+        return view('frontend.profil.dosen');
     }
 }
