@@ -53,6 +53,6 @@ Route::group(['namespace' => 'frontend'], function () {
     });
     // berita
     Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
-        Route::get('/mobil-listrik', 'mobillistrikController@index');
+        Route::get('/mobil-listrik', 'mobilListrikController@index');
     });
 });

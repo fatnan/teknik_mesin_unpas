@@ -106,6 +106,16 @@
         scrollToTop();
         }
     </script>
+    {{--  scroll navbar shadow  --}}
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 10) {
+                $('#navbar').addClass('scrollnav');
+            } else {
+                $('#navbar').removeClass('scrollnav');
+            }
+        });
+    </script>
 </body>
 
 </html>
