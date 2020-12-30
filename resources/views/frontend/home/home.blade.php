@@ -70,7 +70,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">              
                             <div class="item-img">
-                                <a href="/frontend/berita/pmb-fakultas-teknik-universitas-pasundan.html-fakultas-teknik-universitas-pasundan.html">
+                                <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
                                     <img src="/images/banner-pendaftaran-MHS-baru.jpeg" alt="" width="100%"
                                         height="200px">
                                 </a>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="container">
                                 <div class="row">
-                                    <a href="/frontend/berita/pmb-fakultas-teknik-universitas-pasundan.html-fakultas-teknik-universitas-pasundan.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="/berita/mobil-listrik">
+                            <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">
                                 <img src="/images/IIMS_LISTRIK1_MABUA_MEDIA.jpg" alt="" width="100%"
                                     height="200px">
                             </a>
@@ -111,7 +111,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="/frontend/berita/mobil-listrik.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                 sambung-menyambung dalam alur yang kita namakan sejarah, sejak entah kapan, serta akan
                                 berakhir entah kapan pula. Substansi dari perubahan, memang dapat kita prediksi. Namun
                                 hasil akhir suatu episode perubahan, pada hakikatnya adalah hak preogatif Sang Maha
-                                Pemilik Sejarah: Allah Subahanahu wa Ta'ala.
+                                Pemilik Sejarah Allah Subahanahu wa Taala.
                                 <br>
                                 Wassalamu’alaikum Warahmatullaahi Wabarokatuh.
                             </p>
