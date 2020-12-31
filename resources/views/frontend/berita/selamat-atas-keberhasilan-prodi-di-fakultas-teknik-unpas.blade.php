@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" id="details">
+@extends('frontend.layouts.master')
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Universitas Pasundan Fakultas Teknik Mesin">
-        <meta name="author" content="Teknik Mesin Unpas">
-        <link rel="icon" type="image/png" href="/frontend/images/logo unpas.png">
-        <title>Teknik Mesin Unpas</title>
-        <link rel="stylesheet" href="/frontend/libraries/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="/frontend/styles/main.css">
-        <link rel="stylesheet" href="/frontend/libraries/fontawesome-free/css/all.min.css">
-    </head>
+@section('title')
+    
+@endsection
 
-<body>
-    <!-- topnav and navbar -->
-    <div id="nav-placeholder"></div>
+@section('content')
     <main>
         <section class="section-details-header"></section>
         <section class="section-details-content">
@@ -61,7 +50,7 @@
                             <h6>Sumber : nimda
                                 <br>
                                 Sabtu, 05 September 2020</h6>
-                            <img src="/frontend/images/Background-Rapat-Perbaikan-SITI-SAPTO-Fakultas-Teknik-UNPAS-1030x726.png"
+                            <img src="/images/Background-Rapat-Perbaikan-SITI-SAPTO-Fakultas-Teknik-UNPAS-1030x726.png"
                                 alt="" width="100%">
                             <div class="artikel pt-3">
                                 <p>
@@ -110,16 +99,16 @@
                         <ul class="list-unstyled">
                             <h3>Terbaru</h3>
                             <hr>
-                            <li><a href=""><img src="/frontend/images/logo unpas.png" alt="" width="20%"></a>
+                            <li><a href=""><img src="/images/logo unpas.png" alt="" width="20%"></a>
                                 -</li>
                             <br>
-                            <li><a href=""><img src="/frontend/images/logo unpas.png" alt="" width="20%"></a>
+                            <li><a href=""><img src="/images/logo unpas.png" alt="" width="20%"></a>
                                 -</li>
                             <br>
-                            <li><a href=""><img src="/frontend/images/logo unpas.png" alt="" width="20%"></a>
+                            <li><a href=""><img src="/images/logo unpas.png" alt="" width="20%"></a>
                                 -</li>
                             <br>
-                            <li><a href=""><img src="/frontend/images/logo unpas.png" alt="" width="20%"></a>
+                            <li><a href=""><img src="/images/logo unpas.png" alt="" width="20%"></a>
                                 -</li>
                         </ul>
                     </div>
@@ -135,25 +124,25 @@
                         <div class="card-deck">
                             <div class="card card-terkait text-center">
                                 <a href="">
-                                    <img src="/frontend/images/logo unpas.png" alt="" width="30%">
+                                    <img src="/images/logo unpas.png" alt="" width="30%">
                                 </a>
                                 <p>Teknik Mesin Unpas</p>
                             </div>
                             <div class="card card-terkait text-center">
                                 <a href="">
-                                    <img src="/frontend/images/logo unpas.png" alt="" width="30%">
+                                    <img src="/images/logo unpas.png" alt="" width="30%">
                                 </a>
                                 <p>Teknik Mesin Unpas</p>
                             </div>
                             <div class="card card-terkait text-center">
                                 <a href="">
-                                    <img src="/frontend/images/logo unpas.png" alt="" width="30%">
+                                    <img src="/images/logo unpas.png" alt="" width="30%">
                                 </a>
                                 <p>Teknik Mesin Unpas</p>
                             </div>
                             <div class="card card-terkait text-center">
                                 <a href="">
-                                    <img src="/frontend/images/logo unpas.png" alt="" width="30%">
+                                    <img src="/images/logo unpas.png" alt="" width="30%">
                                 </a>
                                 <p>Teknik Mesin Unpas</p>
                             </div>
@@ -166,105 +155,6 @@
         <!-- scroll to top button -->
         <a class="top-bar hide" href="" id="myBtn">
             <span class="fas fa-angle-up fa-2x"></span>
-         </a>
+        </a>
     </main>
-    <!-- footer -->
-    <div id="footer-placeholder"></div>
-    <script src="/frontend/libraries/fontawesome-free/js/fontawesome.min.js"></script>
-    <script src="/frontend/libraries/jquery/jquery-3.5.1.min.js"></script>
-    <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
-    <script src="/frontend/libraries/retina/retina.min.js"></script>
-    <!-- navbar barcode -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("nav-barcode");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("barcode-nav");
-        var modalImg = document.getElementById("img");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
-    <!-- sticky -->
-    <script>
-        window.onscroll = function () {
-            myFunction()
-        };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
-      <!-- scroll to top button -->
-      <script>
-        // Set a variable for our button element.
-        const scrollToTopButton = document.getElementById('myBtn');
-
-        // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
-        const scrollFunc = () => {
-        // Get the current scroll value
-        let y = window.scrollY;
-        
-        // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-        if (y > 0) {
-            scrollToTopButton.className = "top-bar show";
-        } else {
-            scrollToTopButton.className = "top-bar hide";
-        }
-        };
-
-        window.addEventListener("scroll", scrollFunc);
-
-        const scrollToTop = () => {
-        // Let's set a variable for the number of pixels we are from the top of the document.
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        
-        // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
-        // We'll also animate that scroll with requestAnimationFrame:
-        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-        if (c > 0) {
-            window.requestAnimationFrame(scrollToTop);
-            // ScrollTo takes an x and a y coordinate.
-            // Increase the '10' value to get a smoother/slower scroll!
-            window.scrollTo(0, c - c / 20);
-        }
-        };
-
-        // When the button is clicked, run our ScrolltoTop function above!
-        scrollToTopButton.onclick = function(e) {
-        e.preventDefault();
-        scrollToTop();
-        }
-    </script>
-     <script>
-        $(function(){
-          $("#nav-placeholder").load("/navbar/navbar.html");
-        });
-    </script>
-    <script>
-        $(function(){
-          $("#footer-placeholder").load("/footer/footer.html");
-        });
-    </script>
-</body>
-
-</html>
+@endsection

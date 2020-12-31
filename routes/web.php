@@ -54,5 +54,17 @@ Route::group(['namespace' => 'frontend'], function () {
     // berita
     Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
         Route::get('/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas', 'MobilListrikKaryaMahasiswaMesinUnpasController@index');
+        Route::get('/pendaftaran-wisuda-online-UNPAS', 'PendaftaranWisudaOnlineUnpasController@index');
+        Route::get('/pmb-fakultas-teknik-universitas-pasundan', 'PmbFakultasTeknikUniversitasPasundanController@index');
+        Route::get('/teknik-mesin-unpas-ciptakan-traktor-portable', 'TeknikMesinUnpasCiptakanTraktorPortableController@index');
+        Route::get('/Projek-Sweeper-Mahasiswa-Mesin', 'ProjekSweeperMahasiswaMesinController@index');
+        Route::get('/new-noraml-starter-kit', 'NewNormalStarterKitController@index');
+        Route::get('/Penghargaan-di-IMI-Jabar-Awards-2019', 'PenghargaanDiIMIJabarAwards2019Controller@index');
+        Route::get('/Rapat-Perbaikan-SITI-SAPTO-Fakultas-Teknik-UNPAS', 'RapatPerbaikanSitiSaptoFakultasTeknikUnpasController@index');
+        Route::get('/selamat-atas-keberhasilan-prodi-di-fakultas-teknik-unpas', 'SelamatAtasKeberhasilanProdiDiFakultasTeknikUnpasController@index');
+    });
+    // beranda-berita
+    Route::group(['prefix' => 'berita', 'kategori', 'home', 'namespace' => 'berita', 'kategori', 'home'], function () {
+        Route::get('/beranda-berita', 'BerandaBeritaController@index');
     });
 });
