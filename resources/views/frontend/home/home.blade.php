@@ -119,7 +119,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="/frontend/berita/teknik-mesin-unpas-ciptakan-traktor-portable.html">
+                            <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">
                                 <img src="/images/Screen-Shot-2019-07-26-at-10.36.57-300x229.png" alt=""
                                     width="100%">
                             </a>
@@ -136,7 +136,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="/frontend/berita/teknik-mesin-unpas-ciptakan-traktor-portable.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>                      
@@ -144,7 +144,7 @@
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="card-item">
                             <div class="item-img">
-                            <a href="/frontend/berita/Projek-Sweeper-Mahasiswa-Mesin.html">
+                            <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">
                                 <img src="/images/swipper.jpg" alt="" width="100%">
                             </a>
                             </div>
@@ -159,7 +159,7 @@
                             </ul>
                             <div class="container">
                                 <div class="row">
-                                    <a href="/frontend/berita/Projek-Sweeper-Mahasiswa-Mesin.html">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>                      
@@ -170,7 +170,7 @@
             <div class="container">
                 <div class="section-details row justify-content-center">
                     <div class="details-button mt-5">
-                        <a href="/frontend/berita/news.html" class="btn btn-details btn-sm ">
+                        <a href="/berita/kategori/home/beranda-berita" class="btn btn-details btn-sm ">
                             Selengkapnya
                         </a>
                     </div>
@@ -275,7 +275,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="sertifikat.html">
+                                            <a href="sertifikat.">
                                                 <h5 class="card-title">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -316,7 +316,7 @@
                 <div class="container">
                     <div class="section-details row justify-content-center">
                         <div class="details-button mt-5">
-                            <a href="penghargaan.html" class="btn btn-details btn-sm ">
+                            <a href="/berita/penghargaan" class="btn btn-details btn-sm ">
                                 Selengkapnya
                             </a>
                         </div>
@@ -336,16 +336,16 @@
             </section>
         </div>
 
-        <!-- conten video -->
+        <!-- content video -->
         <section class="section-content-video" id="contenVideo">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="card-deck justify-content-center">
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/frontend/berita/universitas-pasundan-profil.html">
+                            <a href="/berita/universitas-pasundan-profil">
                                 <img class="card-01" src="/images/profil-unpas.png" alt="" width="100%">
                             </a>
-                            <a class="link" href="universitas-pasundan-profil.html" style="font-weight:bold;">Profil
+                            <a class="link" href="universitas-pasundan-profil" style="font-weight:bold;">Profil
                                 Universitas
                                 Pasundan Bandung</a>
                             <p style="color: #ddd;">Universitas Pasundan (UNPAS) berdiri pada tanggal 14 November
@@ -354,11 +354,11 @@
 
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/frontend/berita/pendaftaran-wisuda-online-UNPAS.html">
+                            <a href="/frontend/berita/pendaftaran-wisuda-online-UNPAS">
                                 <img class="card-01" src="/images/image-pendaftaran.png" alt="" width="100%">
                             </a>
 
-                            <a class="link" href="pendaftaran-wisuda-online-UNPAS.html"
+                            <a class="link" href="pendaftaran-wisuda-online-UNPAS"
                                 style="font-weight:bold;">Pendaftaran Wisuda Online
                                 UNPAS</a>
                             <p style="color: #ddd;">Prosedur pendaftaran wisuda online Fakultas Teknik Universitas
@@ -373,7 +373,7 @@
             <div class="container">
                 <div class="section-details row justify-content-center">
                     <div class="details-button mt-5">
-                        <a href="konten-video.html" class="btn btn-details-02  ">
+                        <a href="konten-video" class="btn btn-details-02  ">
                             Selengkapnya
                         </a>
                     </div>
