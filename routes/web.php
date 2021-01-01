@@ -68,3 +68,13 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::get('/beranda-berita', 'BerandaBeritaController@index');
     });
 });
+
+Route::group(['namespace' => 'backend'], function () {
+    Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function () {
+        Route::get('/', 'AdminController@index');
+        Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
+            Route::get('/sejarah', 'SejarahController@index');
+            Route::post('/sejarah-store','SejarahController@store')->name('sejarah.store');
+        });
+    });
+});
