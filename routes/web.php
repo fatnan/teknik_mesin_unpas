@@ -62,10 +62,11 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::get('/Penghargaan-di-IMI-Jabar-Awards-2019', 'PenghargaanDiIMIJabarAwards2019Controller@index');
         Route::get('/Rapat-Perbaikan-SITI-SAPTO-Fakultas-Teknik-UNPAS', 'RapatPerbaikanSitiSaptoFakultasTeknikUnpasController@index');
         Route::get('/selamat-atas-keberhasilan-prodi-di-fakultas-teknik-unpas', 'SelamatAtasKeberhasilanProdiDiFakultasTeknikUnpasController@index');
-    });
-    // beranda-berita
-    Route::group(['prefix' => 'berita', 'kategori', 'home', 'namespace' => 'berita', 'kategori', 'home'], function () {
-        Route::get('/beranda-berita', 'BerandaBeritaController@index');
+        Route::group(['prefix' => 'kategori', 'namespace' => 'kategori'], function () {
+            Route::group(['prefix' => 'home', 'namespace' => 'home'], function () {
+                Route::get('/beranda-berita', 'BerandaBeritaController@index');
+            });
+        });
     });
 });
 
