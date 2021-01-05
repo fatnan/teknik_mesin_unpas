@@ -26,7 +26,13 @@
         <div id="collapseProfil" class="collapse" aria-labelledby="headingProfil" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 {{-- <h6 class="collapse-header">Custom Components:</h6> --}}
+                <a class="collapse-item" href="/admin/profil/dosen">Dosen</a>
+                <a class="collapse-item" href="/admin/profil/lulusan">Lulusan</a>
+                <a class="collapse-item" href="/admin/profil/mahasiswa">Mahasiswa</a>
+                <a class="collapse-item" href="/admin/profil/organisasi">Organisasi</a>
+                <a class="collapse-item" href="/admin/profil/sarana">Sarana</a>
                 <a class="collapse-item" href="/admin/profil/sejarah">Sejarah</a>
+                <a class="collapse-item" href="/admin/profil/visimisi">Visi Misi</a>
                 {{-- <a class="collapse-item" href="cards.html">Cards</a> --}}
             </div>
         </div>

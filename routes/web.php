@@ -73,8 +73,20 @@ Route::group(['namespace' => 'backend'], function () {
     Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function () {
         Route::get('/', 'AdminController@index');
         Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
-            Route::get('/sejarah', 'SejarahController@index');
+            Route::get('/dosen', 'DosenController@index');
+            Route::post('/dosen-store','DosenController@store')->name('dosen.store');
+            Route::get('/lulusan', 'LulusanController@index');
+            Route::post('/lulusan-store','LulusanController@store')->name('lulusan.store');
+            Route::get('/mahasiswa', 'MahasiswaController@index');
+            Route::post('/mahasiswa-store','MahasiswaController@store')->name('mahasiswa.store');
+            Route::get('/organisasi', 'OrganisasiController@index');
+            Route::post('/organisasi-store','OrganisasiController@store')->name('organisasi.store');
+            Route::get('/sarana', 'SaranaController@index');
+            Route::post('/sarana-store','SaranaController@store')->name('sarana.store');
+            Route::get('/sejarah', 'SejarahController@index')->name('sejarah.index');
             Route::post('/sejarah-store','SejarahController@store')->name('sejarah.store');
+            Route::get('/visimisi', 'SejarahController@index');
+            Route::post('/visimisi-store','VisiMisiController@store')->name('visimisi.store');
         });
     });
 });
