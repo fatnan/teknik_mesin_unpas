@@ -7,32 +7,31 @@ use Illuminate\Http\Request;
 use App\Profil;
 
 
-class SejarahController extends Controller
+class VisiMisiController extends Controller
 {
     public function index()
     {
-        $profil=Profil::where('jenis','sejarah')->first();
+        $profil=Profil::where('jenis','visimisi')->first();
         if($profil==null){
             $profil=[
                 'content' => ""
             ];
         }
-        $profil['title']="sejarah";
-        $profil['store']="sejarah.store";
+        $profil['title']="Visi Misi";
+        $profil['store']="visimisi.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
     public function store(Request $request){
         $input = $request->all();
-        $input['jenis'] = "sejarah";
+        $input['jenis'] = "visimisi";
         unset($input['_token']);
-        $sejarah = Profil::where('jenis','sejarah')->first();
-        if($sejarah){
-            Profil::where('id',$sejarah['id'])->update($input);
+        $visimisi = Profil::where('jenis','visimisi')->first();
+        if($visimisi){
+            Profil::where('id',$visimisi['id'])->update($input);
         } else {
             Profil::create($input);
         }
-        
-        return redirect()->route('sejarah.index');
+        return redirect()->back();
     }
 }
