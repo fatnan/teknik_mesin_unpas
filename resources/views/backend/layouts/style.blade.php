@@ -6,7 +6,7 @@
 <link href="{{url('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
 <!-- TinyMCE -->
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+{{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
     tinymce.init({
@@ -25,5 +25,8 @@
         content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
     });
 
-</script>
+</script> --}}
+
+<!-- Include Editor JS files. -->
+<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
 
