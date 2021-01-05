@@ -12,11 +12,21 @@ body {
     }
 
     .navbar-brand {
-        border: 1px #ddd solid;
         padding: 4px;
-        border-radius: 2px;
         max-height: 30px;
         margin-top: 2px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+
+        .logo-01:hover,.logo-02:hover{
+            -webkit-transform: scale(1.10);
+            transform: scale(1.10);
+            
+
+        }
 
     }
 
@@ -34,7 +44,7 @@ body {
 .sticky {
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 99 !important;
     transition: 0.4s;
 }
 
@@ -44,12 +54,13 @@ body {
     margin-top: 10px;
     text-align: center;
     font-size: 11px;
+    margin-right: 20px;
     &:hover::after{
         content: '';
         display: block;
         text-decoration: none;
         color: #000;
-        border-bottom: 3px solid orangered;
+        border-bottom: 2px solid orangered;
         padding-bottom: 5px ;
         margin-bottom: -8px;
     }
@@ -61,43 +72,27 @@ body {
 }
 
 
-.search {
-    color: #000;
-    border: none;
-    border-radius: 10px;
-    margin-left: 5px;
-    width: 100px;
-    max-height: 22px;
-    text-align: center;
-    margin-top: 4.5px;
-    font-size: 11px;
-    font-weight: lighter;
-
-    .btn-default {
-        background-color: #000;
-
-    }
-
-}
-
 // end seacrh and contac
 
 // navbar and dropdown
-
+.scrollnav {
+    box-shadow: 0px 1px 1rem;
+  }
 .navbar-dark {
     background: linear-gradient(to right, #041754, #214972);
     width: 100%;
     padding: 3px;
     top: 0;
-    z-index: 999 !important;
-    
+    z-index: 99 !important;
     img {
         max-height: 55px;
     }
     a{
         color: #fff !important;
     }
+ 
 }
+
 
 .navbar-brand img :hover {
     background-color: none;
@@ -167,7 +162,7 @@ body {
 
 // barcode
 #barcode-nav {
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -797,11 +792,11 @@ body {
         color: #00acee;
     }
 
-    // .instagram {
-    //     background: linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77, #f58529);
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    // }
+    .instagram {
+        background: linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     .line {
         color: #00b900;
@@ -1337,10 +1332,10 @@ body {
     }
 }
 
-//pencarian.html
+//visi & misi.html
 
 .section-details-02 {
-    color: #21405E;
+    color: #000;
     margin-left: 60px;
 }
 
