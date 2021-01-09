@@ -18,7 +18,7 @@ class DosenController extends Controller
             ];
         }
         $profil['title']="Dosen";
-        $profil['store']="dosen.store";
+        $profil['store']="backend.profil.dosen.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class DosenController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.dosen.index');
     }
 }

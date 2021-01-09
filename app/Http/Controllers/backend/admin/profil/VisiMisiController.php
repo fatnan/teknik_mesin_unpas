@@ -18,7 +18,7 @@ class VisiMisiController extends Controller
             ];
         }
         $profil['title']="Visi Misi";
-        $profil['store']="visimisi.store";
+        $profil['store']="backend.profil.visimisi.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class VisiMisiController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.visimisi.index');
     }
 }

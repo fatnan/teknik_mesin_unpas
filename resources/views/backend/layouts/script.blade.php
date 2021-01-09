@@ -14,9 +14,10 @@
 <!-- Page level custom scripts -->
 <script src="{{url('backend/js/demo/chart-area-demo.js')}}"></script>
 <script src="{{url('backend/js/demo/chart-pie-demo.js')}}"></script>
-
+<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace( 'tinymce', {
-        // extraPlugins: 'imageuploader'
+    CKEDITOR.replace( 'ckeditor', {
+        filebrowserUploadUrl: "{{route('post.image', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
     });
 </script>

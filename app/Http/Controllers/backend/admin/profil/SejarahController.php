@@ -18,7 +18,7 @@ class SejarahController extends Controller
             ];
         }
         $profil['title']="sejarah";
-        $profil['store']="sejarah.store";
+        $profil['store']="backend.profil.sejarah.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,7 +32,7 @@ class SejarahController extends Controller
         } else {
             Profil::create($input);
         }
-        
-        return redirect()->route('sejarah.index');
+
+        return redirect()->route('backend.profil.sejarah.index');
     }
 }
