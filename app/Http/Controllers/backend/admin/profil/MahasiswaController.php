@@ -18,7 +18,7 @@ class MahasiswaController extends Controller
             ];
         }
         $profil['title']="Mahasiswa";
-        $profil['store']="mahasiswa.store";
+        $profil['store']="backend.profil.mahasiswa.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class MahasiswaController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.mahasiswa.index');
     }
 }
