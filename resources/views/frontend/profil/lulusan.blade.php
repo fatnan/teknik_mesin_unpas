@@ -45,30 +45,8 @@
                 <div class="row">
                     <div class="col-sm-8 pl-lg-3">
                         <div class="section section-details-05">
-                            <h1>Lulusan
-                            </h1>
-
-                            <img src="/images/WhatsApp Image 2020-08-16 at 17.24.59.jpeg" alt="" width="100%">
-                            <h5>Lulusan Teknik Mesin Unpas Bandung</h5>
-                            <p>Saat ini, hampir semua bidang industri memanfaatkan mesin untuk efisiensi dan
-                                memaksimalkan produksinya. Itu sebabnya kebutuhan akan tenaga profesional dalam bidang
-                                teknik mesin masih sangat tinggi.</p>
-                            <p>Universitas Pasundan menyelenggarakan Program Studi Teknik Mesin dengan akreditasi A
-                                BAN-PT untuk mencetak sumber daya yang mampu berkiprah di bidang manufaktur, desain &
-                                bangun produk, konstruksi dan perancangan, hingga konversi energi.</p>
-                            <p>Lulusan teknik mesin berpeluang mengambil tempat-tempat strategis di berbagai industri
-                                manufaktur, pembangkitan energi, perusahaan minyak dan gas, otomotif, hingga jasa
-                                konsultasi, desain, & konstruksi.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, fugit earum tempora
-                                quaerat provident nesciunt, illum adipisci iure consequuntur quam soluta facere quod
-                                minima impedit, minus debitis reiciendis ab eveniet? </p>
-
-                            <h5>Karir Lulusan Teknik mesin</h5>
-                            <p>Berkat prospek kerja yang luas, terdapat banyak karir yang dapat kalian pilih, mulai dari
-                                teknisi, mekanik, peneliti, konsultan, insinyur pemipaan, insinyur pengelasan, petugas
-                                pemeliharaan, sales produk teknik, tenaga pengajar, hingga abdi negara. Selain itu,
-                                kalian pun dapat bekerja di sektor lain, seperti finansial, perbankan, pertanian, dan
-                                lainnya yang tidak terkait permesinan.</p>
+                            <h1><?=ucfirst($jenis)?></h1>
+                            <?=$content?>
                         </div>
                     </div>
                     <div class="col-lg-4">

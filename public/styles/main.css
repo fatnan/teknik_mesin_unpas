@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+/* topnav */
 .topnav {
   background-color: #041754;
 }
@@ -63,12 +64,15 @@ body {
   border-left: 1px solid #fff;
   padding-left: 8px;
 }
-
+/* end topnav */
+/* shadow on scroll */
 .scrollnav {
   -webkit-box-shadow: 0px 1px 1rem;
           box-shadow: 0px 1px 1rem;
 }
+/* end shadow */
 
+/* navbar */
 .navbar-dark {
   background: -webkit-gradient(linear, left top, right top, from(#041754), to(#214972));
   background: linear-gradient(to right, #041754, #214972);
@@ -270,9 +274,17 @@ body {
     display: block;
   }
 }
+/* end navbar */
 
+/* header */
 .carousel-inner a {
   width: 20px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  background-color: rgba(0, 0, 0, 0.9);
+ height: 0;
+ margin:auto;
 }
 
 .carousel-inner img {
@@ -281,7 +293,8 @@ body {
   max-height: 600px;
   margin-top: -50px;
 }
-
+/* end header */
+/* about */
 .section-about {
   margin-top: 30px;
   color: #041754;
@@ -355,7 +368,9 @@ body {
   background-color: #041754;
   color: white;
 }
+/* end about */
 
+/* sambutan */
 .section-sambutan {
   margin-top: 0;
   color: #041754;
@@ -394,6 +409,7 @@ body {
   margin-top: 50px;
 }
 
+/* award */
 .section-award {
   margin-top: 50px;
   color: #041754;
@@ -409,8 +425,11 @@ body {
   float: left;
   margin-top: 15px;
 }
-
-.section-content-award .flip-card {
+/* content award */
+.section-content-award {
+  margin-bottom: 100px;
+}
+.flip-card {
   background-color: transparent;
   width: 45vh;
   height: 30vh;
@@ -478,7 +497,7 @@ body {
   width: 50%;
   margin: auto;
 }
-
+/* video */
 .section-video {
   margin-top: 50px;
   color: #fff;
@@ -500,6 +519,7 @@ body {
   background: linear-gradient(to bottom right, #041754, #214972);
   padding-bottom: 100px;
   margin-top: -100px;
+  margin-bottom: 50px;
 }
 
 .section-content-video .card-01 {
@@ -1066,6 +1086,93 @@ body {
   font-size: small;
 }
 
+/* gallery.html */
+/* section-gallery */
+.section-gallery {
+  margin-top: 30px;
+  color: #041754;
+}
+.section-gallery .title-news {
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-gallery img {
+  max-height: 25px;
+  float: left;
+  margin-top: 15px;
+}
+/* modal-image */
+.jumbotron {
+  margin-top: -100px;
+  background-color: #fff;
+}
+
+.gallery{
+  margin-top: 100px;
+}
+.gallery img {
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  
+}
+
+.gallery img:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+/* The Modal (background) */
+#image-viewer {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto !important;
+  display: block;
+  width: 60%;
+  max-width: 100%;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+#image-viewer .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100% !important;
+  }
+}
+/* end modal */
 @media screen and (max-width: 375px) {
   .section-details-content .hr {
     opacity: 0;
@@ -1404,7 +1511,9 @@ body {
   padding-bottom: 50px;
 }
 
+/* resposive */
 @media (max-width: 500px) {
+  
   .section-footer-01 {
     padding-bottom: 20px;
     margin-top: -50px;
