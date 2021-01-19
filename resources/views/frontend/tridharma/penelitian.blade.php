@@ -45,40 +45,8 @@
                 <div class="row">
                     <div class="col-sm-8 pl-lg-3">
                         <div class="section section-details-01">
-                            <h1>Penelitian
-                            </h1>
-                            <h6>Oleh :
-                                <br>
-                                Rabu, 12 Agustus 2020</h6>
-                            <img src="#" alt="" width="100%">
-                            <br><br>
-                            <h5>VISI PRODI TEKNIK MESIN</h5>
-                            <p>Menjadi penyelenggara pendidikan tinggi Teknik Mesin sepuluh besar nasional dan melangkah
-                                menuju komunitas
-                                akademik peringkat internasional yang mengusung nilai kesundaan dan keislaman pad atahun
-                                2021.</p>
-                            <br>
-                            <h5>MISI PRODI TEKNIK MESIN</h5>
-                            <p>Menyelenggarakan pendidikan tinggi yang berorientasi untuk menghasilkan ilmuan,praktisi
-                                industri dan wirausahawan yang profesional dalam bidang teknik mesin.</li>
-                                <p>Menyelenggarakan penelitian untuk mengembangkan ilmu dan teknologi dalam bidang
-                                    teknik mesin.</p>
-                                <p>Ikut berperan aktif dalam pengabdian kepada masyarakat dengan menyebarluaskan
-                                    aplikasi keteknikan untuk
-                                    mendorong dan membantu perkembangan industri kecil,menengah dan besar.</p>
-                                <p>Bekerjasama dalam bidang pendidikan,penelitian dan pengabdian kepada masyarakat
-                                    dengan institusi dalam dan luar negeri.</p>
-                                <br>
-                                <h5>TUJUAN:</h5>
-                                <p>Menghasilkan lulusan yang kompeten dalam bidang Teknik Mesin serta mampu memecahkan
-                                    setiap permasalahan di lingkungan kerja.</p>
-                                <p>Menghasilkan penelitian-penelitian yang dapat diaplikasikan bagi perkembangan
-                                    industri yang berkaitan dengan bidang Teknik Mesin.</p>
-                                <p>Mendorong terciptanya penerapan dan aplikasi teknologi tepat guna untuk mendukung
-                                    perkembangan industri kecil dan menengah sebagai bentuk pengabdian kepada
-                                    masyarakat.</li>
-                                    <p>Menghasilkan kerjasama dalam bidang pendidikan,penelitian dan pengabdian kepada
-                                        masyarakat dengan institusi.</p>
+                            <h1><?=ucfirst($jenis)?></h1>
+                            <?=$content?>
                         </div>
                     </div>
                     <div class="col-lg-4">

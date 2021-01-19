@@ -81,7 +81,7 @@
                         <a class="dropdown-item" href="/tridharma/pendidikan">PENDIDIKAN</a>
                         <a class="dropdown-item" href="/tridharma/penelitian">PENELITIAN</a>
                         <a class="dropdown-item" href="/tridharma/ppm">PENGABDIAN PADA MASYARAKAT</a>
-                        <a class="dropdown-item" href="#">LAYANAN INDUSTRI</a>
+                        <a class="dropdown-item" href="/tridharma/layanan">LAYANAN INDUSTRI</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -97,6 +97,12 @@
                         <a class="dropdown-item" href="login.html">MITRA</a>
                         <a class="dropdown-item" href="login.html">HIMPUNAN MAHASISWA</a>
                     </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-2" href="/gallery/index" id="navb" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                       GALLERY
+                    </a>
                 </li>
                 <div class="container">
                     <div class="row">

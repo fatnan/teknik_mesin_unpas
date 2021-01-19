@@ -38,7 +38,7 @@
                 <span class="fa fa-chevron-circle-left" style="font-size: 40px;"></span>
             </a>
             <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <span class="fa fa-chevron-circle-right" style="font-size:40px;"></span>
+                <span class="fa fa-chevron-circle-right" style="font-size: 40px;"></span>
             </a>
         </div>
     </header>
@@ -275,7 +275,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="sertifikat.">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -289,7 +289,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title" ">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -303,7 +303,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -313,14 +313,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="section-details row justify-content-center">
-                        <div class="details-button mt-5">
-                            <a href="/berita/penghargaan" class="btn btn-details btn-sm ">
-                                Selengkapnya
-                            </a>
-                        </div>
-                    </div>
             </section>
         </section>
 
@@ -342,10 +334,10 @@
                 <div class="row justify-content-center">
                     <div class="card-deck justify-content-center">
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/berita/universitas-pasundan-profil">
+                            <a href="/videos/profil-universitas-pasundan">
                                 <img class="card-01" src="/images/profil-unpas.png" alt="" width="100%">
                             </a>
-                            <a class="link" href="universitas-pasundan-profil" style="font-weight:bold;">Profil
+                            <a class="link" href="/videos/profil-universitas-pasundan" style="font-weight:bold;">Profil
                                 Universitas
                                 Pasundan Bandung</a>
                             <p style="color: #ddd;">Universitas Pasundan (UNPAS) berdiri pada tanggal 14 November
@@ -354,11 +346,11 @@
 
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/frontend/berita/pendaftaran-wisuda-online-UNPAS">
+                            <a href="/videos/pendaftaran-wisuda-online-UNPAS">
                                 <img class="card-01" src="/images/image-pendaftaran.png" alt="" width="100%">
                             </a>
 
-                            <a class="link" href="pendaftaran-wisuda-online-UNPAS"
+                            <a class="link" href="/videos/pendaftaran-wisuda-online-UNPAS"
                                 style="font-weight:bold;">Pendaftaran Wisuda Online
                                 UNPAS</a>
                             <p style="color: #ddd;">Prosedur pendaftaran wisuda online Fakultas Teknik Universitas
@@ -369,15 +361,7 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="container">
-                <div class="section-details row justify-content-center">
-                    <div class="details-button mt-5">
-                        <a href="konten-video" class="btn btn-details-02  ">
-                            Selengkapnya
-                        </a>
-                    </div>
-                </div>
+        </div>
         </section>
 
         <!-- partner -->
