@@ -18,6 +18,7 @@
 <script>
     CKEDITOR.replace( 'ckeditor', {
         filebrowserUploadUrl: "{{route('post.image', ['_token' => csrf_token() ])}}",
-        filebrowserUploadMethod: 'form'
+        filebrowserUploadMethod: 'form',
+        height:400
     });
 </script>
