@@ -50,12 +50,12 @@
                     <div class="col-12 col-lg">
                         <h5>SIVITAS</h5>
                         <ul class="list-unstyled">
-                            <li><a href="login.html">Mahasiswa</a></li>
-                            <li><a href="login.html">Alumni</a></li>
-                            <li><a href="login.html">Dosen</a></li>
-                            <li><a href="login.html">Staff</a></li>
-                            <li><a href="login.html">Mitra</a></li>
-                            <li><a href="login.html">HMM</a></li>
+                            <li><a href="{{route('login')}}">Mahasiswa</a></li>
+                            <li><a href="{{route('login')}}">Alumni</a></li>
+                            <li><a href="{{route('login')}}">Dosen</a></li>
+                            <li><a href="{{route('login')}}">Staff</a></li>
+                            <li><a href="{{route('login')}}">Mitra</a></li>
+                            <li><a href="{{route('login')}}">HMM</a></li>
                         </ul>
                     </div>
                     

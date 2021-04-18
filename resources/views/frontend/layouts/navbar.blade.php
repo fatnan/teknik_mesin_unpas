@@ -90,12 +90,12 @@
                         SIVITAS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navb">
-                        <a class="dropdown-item" href="login.html">MAHASISWA</a>
-                        <a class="dropdown-item" href="login.html">ALUMNI</a>
-                        <a class="dropdown-item" href="login.html">DOSEN</a>
-                        <a class="dropdown-item" href="login.html">STAFF</a>
-                        <a class="dropdown-item" href="login.html">MITRA</a>
-                        <a class="dropdown-item" href="login.html">HIMPUNAN MAHASISWA</a>
+                        <a class="dropdown-item" href="{{route('login')}}">MAHASISWA</a>
+                        <a class="dropdown-item" href="{{route('login')}}">ALUMNI</a>
+                        <a class="dropdown-item" href="{{route('login')}}">DOSEN</a>
+                        <a class="dropdown-item" href="{{route('login')}}">STAFF</a>
+                        <a class="dropdown-item" href="{{route('login')}}">MITRA</a>
+                        <a class="dropdown-item" href="{{route('login')}}">HIMPUNAN MAHASISWA</a>
                     </div>
                 </li>
                 <div class="container">

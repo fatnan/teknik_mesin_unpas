@@ -71,7 +71,7 @@ Route::group(['namespace' => 'frontend'], function () {
 });
 
 Route::group(['namespace' => 'backend'], function () {
-    Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function () {
+    Route::group(['prefix' => 'admin', 'namespace' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/', 'AdminController@index');
         Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
             Route::get('/dosen', 'DosenController@index');
@@ -91,3 +91,6 @@ Route::group(['namespace' => 'backend'], function () {
         });
     });
 });
+Auth::routes(['register' => false,'reset' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
