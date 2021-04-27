@@ -23,7 +23,8 @@
                             <form class="image-upload" method="post" action="{{ route($store) }}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <textarea id="ckeditor" name="content" rows="5" cols="40" class="form-control tinymce-editor"><?=$content?></textarea>
+                                    <textarea id="ckeditor" name="content" rows="5" cols="40" class="form-control tinymce-editor">
+                                        <?=$content?></textarea>
                                 </div>  
                                 <div class="form-group text-center">
                                     <button type="submit" class="btn btn-success btn-sm">Save</button>

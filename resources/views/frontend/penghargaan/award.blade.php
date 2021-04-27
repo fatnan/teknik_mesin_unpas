@@ -75,9 +75,6 @@
     <a class="top-bar hide" href="" id="myBtn">
         <span class="fas fa-angle-up fa-2x"></span>
      </a>
-     <div class="container">
-         <hr>
-     </div>
 </main>
 
 @endsection
