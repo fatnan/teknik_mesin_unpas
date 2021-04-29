@@ -80,10 +80,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <hr class="hr">
-            </div>
+            </div> 
         </section>
 
         <!-- scroll to top button -->

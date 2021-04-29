@@ -5,4 +5,7 @@
 @endsection
 
 @section('content')
+    <main>
+        <div class="section"></div>
+    </main>
 @endsection

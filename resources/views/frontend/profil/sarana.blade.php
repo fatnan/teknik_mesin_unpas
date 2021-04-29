@@ -45,20 +45,8 @@
                 <div class="row">
                     <div class="col-sm-8 pl-lg-3">
                         <div class="section section-details-06">
-                            <h1>Sarana & Prasarana
-                            </h1>
-
-                            <img src="/images/WhatsApp Image 2020-08-16 at 17.24.59.jpeg" alt="" width="100%">
-
-                            <h5>Sarana </h5>
-                            <p>Peralatan Ruang Kuliah</p>
-                            <p>xxxxxxxxxxxxxx</p>
-                            <p>xxxxxxxxxxxxxx</p>
-
-                            <h5>Prasarana</h5>
-                            <p>Semua ruang perkuliahan dilengkapi dengan AC</p>
-                            <p>Absensi menggunakan finger print</p>
-                            <p>Pembelajaran menggunakan U-Learning dan E-Learning teknologi Korea</p>
+                            <h1><?=ucfirst($jenis)</h1>
+                            <?=$content?>
                         </div>
                     </div>
                     <div class="col-lg-4">

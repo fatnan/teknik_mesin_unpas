@@ -5,28 +5,4 @@
 <!-- Custom styles for this template-->
 <link href="{{url('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
-<!-- TinyMCE -->
-{{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
-<script>
-    tinymce.init({
-        selector: 'textarea#tinymce',
-        height: 500,
-        menubar: false,
-        plugins: [
-            'advlist autolink lists link image charmap print preview anchor',
-            'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | ' +
-        'bold italic backcolor | alignleft aligncenter ' +
-        'alignright alignjustify | bullist numlist outdent indent | ' +
-        'removeformat | help',
-        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-    });
-
-</script> --}}
-
-<!-- Include Editor JS files. -->
-<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
 

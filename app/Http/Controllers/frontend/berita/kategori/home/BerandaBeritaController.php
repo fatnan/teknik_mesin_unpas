@@ -10,5 +10,6 @@ class BerandaBeritaController extends Controller
     public function index()
     {
         return view('frontend.berita.kategori.home.beranda-berita');
+
     }
 }

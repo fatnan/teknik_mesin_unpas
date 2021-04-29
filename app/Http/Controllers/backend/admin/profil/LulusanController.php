@@ -18,7 +18,7 @@ class LulusanController extends Controller
             ];
         }
         $profil['title']="Lulusan";
-        $profil['store']="lulusan.store";
+        $profil['store']="backend.profil.lulusan.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class LulusanController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.lulusan.index');
     }
 }

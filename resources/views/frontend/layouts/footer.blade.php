@@ -1,5 +1,11 @@
+<!-- scroll to top button -->
+<a class="top-bar hide" href="" id="myBtn">
+    <span class="fas fa-angle-up fa-2x"></span>
+</a>
+
 <footer class="section-footer ">
     <div class="container pt-3 pb-5">
+        <hr class="mb-5">
         <div class="row justify-content-center pl-5">
             <div class="col-12">
                 <div class="row ">

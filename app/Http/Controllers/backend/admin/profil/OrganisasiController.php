@@ -18,7 +18,7 @@ class OrganisasiController extends Controller
             ];
         }
         $profil['title']="Organisasi";
-        $profil['store']="organisasi.store";
+        $profil['store']="backend.profil.organisasi.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class OrganisasiController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.organisasi.index');
     }
 }

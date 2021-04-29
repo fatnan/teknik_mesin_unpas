@@ -18,7 +18,7 @@ class SaranaController extends Controller
             ];
         }
         $profil['title']="Sarana";
-        $profil['store']="sarana.store";
+        $profil['store']="backend.profil.sarana.store";
         return view('backend.admin.profil.edit',$profil);
     }
 
@@ -32,6 +32,6 @@ class SaranaController extends Controller
         } else {
             Profil::create($input);
         }
-        return redirect()->back();
+        return redirect()->route('backend.profil.sarana.index');
     }
 }
