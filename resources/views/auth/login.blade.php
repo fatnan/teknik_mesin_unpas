@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+
 <div class="limiter">
     <div class="container-login100" style="background-image: url('../images/background-login.jpg');">
         <div class="wrap-login100 p-t-30 p-b-50">
@@ -37,12 +38,15 @@
                     <button type="submit" class="login100-form-btn">
                         {{ __('Login') }}
                     </button>
-                    
-                    @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Forgot Your Password?') }}
-                    </a>
-                @endif
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            @if (Route::has('password.request'))
+                            <a class="btn btn-link" href="{{ route('password.request') }}" style="font-size: 12px;  color: #333;">
+                                {{ __('Forgot Your Password?') }}
+                            </a>
+                        @endif
+                        </div>
+                    </div>
                 </div>
 
             </form>

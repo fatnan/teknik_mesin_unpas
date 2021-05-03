@@ -1791,7 +1791,6 @@ body {
 }
 /* login */
 
-/*---------------------------------------------*/
 input {
     outline: none;
     border: none;
@@ -1908,7 +1907,6 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 15px;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

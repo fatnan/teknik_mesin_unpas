@@ -68,9 +68,8 @@
         <section class="section-content-item" id="contenItem">
             <div class="container">
                 <div class="section-content-news row justify-content-center"> 
-                    
                     <div class="col-sm-6 col-md-3 col-lg-3">
-                            <div class="card-item">              
+                            <div class="card-item">         
                                     <div class="item-img">
                                         <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
                                             <img src="" alt="" width="100%"
@@ -78,7 +77,7 @@
                                         </a>
                                     </div>
                                     <div class=" item-judul">
-                                        <a></a>                    
+                                        <a> </a>                    
                                         <ul class="list-unstyled">
                                             <li class="post-date">
                                                 <i class="far fa-calendar-alt"
@@ -97,7 +96,6 @@
                                     </div>
                                 </div>
                             </div>
-                          
                         </div>
                     </div>
                

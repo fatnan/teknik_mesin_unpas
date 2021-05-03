@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="about">
+<html lang="en" id="home">
 
     <head>
         <meta charset="UTF-8">
