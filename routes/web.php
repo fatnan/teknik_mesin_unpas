@@ -170,6 +170,14 @@ Route::group(['namespace' => 'backend'], function () {
             Route::get('/pengabdian', 'PengabdianController@index')->name('backend.tridharma.pengabdian.index');
             Route::post('/pengabdian-store', 'PengabdianController@store')->name('backend.tridharma.pengabdian.store');
         });
+        // Route::resource('berita', 'BeritaController');
+        Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
+            Route::get('/', 'BeritaController@index')->name('berita.index');
+            Route::get('berita/{id}/edit', 'BeritaController@edit')->name('berita.edit');
+            Route::get('berita/destroy/{id}', 'BeritaController@destroy')->name('berita.delete');
+            Route::post('berita/store', 'BeritaController@store')->name('berita.store');
+            Route::post('berita/update', 'BeritaController@update')->name('berita.update');
+        });
     });
 });
 

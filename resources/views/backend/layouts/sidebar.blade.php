@@ -90,7 +90,7 @@
 
     <!-- Nav Item - Berita -->
     <li class="nav-item">
-        <a class="nav-link" href="/admin/dashboard">
+        <a class="nav-link" href="/admin/berita">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Berita</span>
         </a>

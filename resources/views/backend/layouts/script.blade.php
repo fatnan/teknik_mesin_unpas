@@ -14,10 +14,15 @@
 <!-- Page level custom scripts -->
 <script src="{{url('backend/js/demo/chart-area-demo.js')}}"></script>
 <script src="{{url('backend/js/demo/chart-pie-demo.js')}}"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace( 'ckeditor', {
-        filebrowserUploadUrl: "{{route('post.image', ['_token' => csrf_token() ])}}",
-        filebrowserUploadMethod: 'form'
-    });
+    var myEle = document.getElementById("ckeditor");
+    if(myEle){
+        CKEDITOR.replace( 'ckeditor', {
+            filebrowserUploadUrl: "{{route('post.image', ['_token' => csrf_token() ])}}",
+            filebrowserUploadMethod: 'form'
+        });
+    }
+
 </script>
