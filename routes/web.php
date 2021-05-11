@@ -81,6 +81,15 @@ Route::group(['namespace' => 'frontend'], function () {
             Route::group(['prefix' => 'prodi', 'namespace' => 'prodi'], function () {
                 Route::get('/index', 'ProdiController@index');
             });
+            Route::group(['prefix' => 'pengabdian', 'namespace' => 'pengabdian'], function () {
+                Route::get('/index', 'PengabdianController@index');
+            });
+            Route::group(['prefix' => 'penelitian', 'namespace' => 'penelitian'], function () {
+                Route::get('/index', 'PenelitianController@index');
+            });
+            Route::group(['prefix' => 'akademik', 'namespace' => 'akademik'], function () {
+                Route::get('/index', 'AkademikController@index');
+            });
         });
     });
     // gallery
