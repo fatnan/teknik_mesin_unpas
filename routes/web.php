@@ -11,6 +11,9 @@
 |
 */
 
+use App\Http\Controllers\frontend\berita\PmbFakultasTeknikUniversitasPasundanController;
+use PhpParser\Node\Stmt\Echo_;
+
 Route::get('/', function () {
     return view('frontend/home/home');
 });
@@ -46,11 +49,19 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::get('/postdoctoral', 'PostDoctoralController@index');
         Route::get('/sarjana', 'SarjanaController@index');
     });
+    // tridahram
     Route::group(['prefix' => 'tridharma', 'namespace' => 'tridharma'], function () {
         Route::get('/layanan', 'LayananController@index');
         Route::get('/pendidikan', 'PendidikanController@index');
         Route::get('/penelitian', 'PenelitianController@index');
         Route::get('/ppm', 'PengabdianController@index');
+    });
+    // sivitas
+    Route::group(['prefix' => 'sivitas', 'namespace' => 'sivitas'], function () {
+        Route::get('/mahasiswa', 'MhsController@index');
+        Route::group(['prefix' => 'student', 'namespace' => 'student'], function () {
+        });
+        
     });
     // berita
     Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
@@ -66,6 +77,18 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::group(['prefix' => 'kategori', 'namespace' => 'kategori'], function () {
             Route::group(['prefix' => 'home', 'namespace' => 'home'], function () {
                 Route::get('/beranda-berita', 'BerandaBeritaController@index');
+            });
+            Route::group(['prefix' => 'prodi', 'namespace' => 'prodi'], function () {
+                Route::get('/index', 'ProdiController@index');
+            });
+            Route::group(['prefix' => 'pengabdian', 'namespace' => 'pengabdian'], function () {
+                Route::get('/index', 'PengabdianController@index');
+            });
+            Route::group(['prefix' => 'penelitian', 'namespace' => 'penelitian'], function () {
+                Route::get('/index', 'PenelitianController@index');
+            });
+            Route::group(['prefix' => 'akademik', 'namespace' => 'akademik'], function () {
+                Route::get('/index', 'AkademikController@index');
             });
         });
     });
@@ -88,9 +111,9 @@ Route::group(['namespace' => 'frontend'], function () {
 
 //route untuk backend
 Route::group(['namespace' => 'backend'], function () {
-    Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function () {
+    Route::group(['prefix' => 'admin', 'namespace' => 'admin', 'middleware' => ['auth', 'admin']], function () {
         Route::post('/images', 'PostController@uploadImage')->name('post.image');
-        Route::get('/', 'AdminController@index');
+        Route::get('/dashboard', 'AdminController@index');
         Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
             Route::get('/dosen', 'DosenController@index')->name('backend.profil.dosen.index');
             Route::post('/dosen-store', 'DosenController@store')->name('backend.profil.dosen.store');
@@ -147,5 +170,15 @@ Route::group(['namespace' => 'backend'], function () {
             Route::get('/pengabdian', 'PengabdianController@index')->name('backend.tridharma.pengabdian.index');
             Route::post('/pengabdian-store', 'PengabdianController@store')->name('backend.tridharma.pengabdian.store');
         });
+        // Route::resource('berita', 'BeritaController');
+        Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
+            Route::get('/', 'BeritaController@index')->name('berita.index');
+            Route::get('berita/{id}/edit', 'BeritaController@edit')->name('berita.edit');
+            Route::get('berita/destroy/{id}', 'BeritaController@destroy')->name('berita.delete');
+            Route::post('berita/store', 'BeritaController@store')->name('berita.store');
+            Route::post('berita/update', 'BeritaController@update')->name('berita.update');
+        });
     });
 });
+
+Auth::routes(['register' => false , 'reset' => false]);

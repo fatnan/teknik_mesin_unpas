@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+
     <header>
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -66,106 +67,38 @@
         <!-- content item -->
         <section class="section-content-item" id="contenItem">
             <div class="container">
-                <div class="section-content-news row justify-content-center">
+                <div class="section-content-news row justify-content-center"> 
                     <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">              
-                            <div class="item-img">
-                                <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
-                                    <img src="/images/banner-pendaftaran-MHS-baru.jpeg" alt="" width="100%"
-                                        height="200px">
-                                </a>
-                            </div>
-                            <div class=" item-judul">
-                                <a>Pendaftaran Mahasiswa Baru Fakultas Teknik UNPAS</a>                    
-                                <ul class="list-unstyled">
-                                    <li class="post-date">
-                                        <i class="far fa-calendar-alt"
-                                            style="color: #333; font-weight: lighter; font-size: small;"> 25 September
-                                            2020</i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="card-item">         
+                                    <div class="item-img">
+                                        <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
+                                            <img src="" alt="" width="100%"
+                                                height="200px">
+                                        </a>
+                                    </div>
+                                    <div class=" item-judul">
+                                        <a> </a>                    
+                                        <ul class="list-unstyled">
+                                            <li class="post-date">
+                                                <i class="far fa-calendar-alt"
+                                                    style="color: #333; font-weight: lighter; font-size: small;">
+                                              
+                                                </i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="btn btn-details-content">
+                                                <a href="">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">
-                                <img src="/images/IIMS_LISTRIK1_MABUA_MEDIA.jpg" alt="" width="100%"
-                                    height="200px">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Mobil Balap listrik Karya Mahasiswa Unpas Bandung Mejeng di IIMS</a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 12 Agustus 2020</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">
-                                <img src="/images/Screen-Shot-2019-07-26-at-10.36.57-300x229.png" alt=""
-                                    width="100%">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Teknik Mesin Fakultas Teknik Unpas, Ciptakan Traktor Portable
-                                </a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 26 Juli 2019</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">
-                                <img src="/images/swipper.jpg" alt="" width="100%">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Projek Sweeper Mahasiswa Teknik Mesin Unpas</a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 28 Februari 2020</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                </div>
-            </div>
+               
             <!-- selengkapnya -->
             <div class="container">
                 <div class="section-details row justify-content-center">

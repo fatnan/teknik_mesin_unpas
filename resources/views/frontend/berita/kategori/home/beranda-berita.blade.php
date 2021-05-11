@@ -15,10 +15,10 @@
                             <ol class="breadcrumb navbar-breadcrumb">
                                 <li class="breadcrumb-navbar">
                                     <a href="" class="Berita-Utama active">Berita Utama</a>
-                                    <a href="" class="Penelitian">Prodi</a>
-                                    <a href="" class="Akademik">Akademik</a>
-                                    <a href="" class="Institusi">Penelitian</a>
-                                    <a href="" class="Profil">Pengabdian Pada Masyarakat</a>
+                                    <a href="/berita/kategori/prodi/index" class="Penelitian">Prodi</a>
+                                    <a href="/berita/kategori/akademik/index" class="Akademik">Akademik</a>
+                                    <a href="/berita/kategori/penelitian/index" class="Institusi">Penelitian</a>
+                                    <a href="/berita/kategori/pengabdian/index" class="Profil">Pengabdian Pada Masyarakat</a>
                                 </li>
                         </nav>
                     </div>

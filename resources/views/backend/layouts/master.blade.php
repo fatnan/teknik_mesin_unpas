@@ -60,12 +60,68 @@
         </div>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
+         <form action="{{ url('logout') }}" method="POST">
+           @csrf
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="#">Logout</a>
         </div>
       </div>
     </div>
   </div>
+
+
+    <div id="formModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add New Record</h4>
+                </div>
+                <div class="modal-body">
+                    <span id="form_result"></span>
+                    <form method="post" id="berita_form" class="form-horizontal">
+                        @csrf
+                        <div class="form-group">
+                        <label class="control-label col-md-4" >Judul </label>
+                        <div class="col-md-8">
+                            <input type="text" name="judul" id="judul" class="form-control" />
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="control-label col-md-4">Content : </label>
+                        <div class="col-md-8">
+                            <input type="text" name="content" id="content" class="form-control" />
+                        </div>
+                        </div>
+                        <br />
+                        <div class="form-group" align="center">
+                            <input type="hidden" name="action" id="action" value="Add" />
+                            <input type="hidden" name="hidden_id" id="hidden_id" />
+                            <input type="submit" name="action_button" id="action_button" class="btn btn-warning" value="Add" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Confirmation</h2>
+                </div>
+                <div class="modal-body">
+                    <h4 align="center" style="margin:0;">Are you sure you want to remove this data?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" name="ok_button" id="ok_button" class="btn btn-danger">OK</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @include('backend.layouts.script')
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="about">
+<html lang="en" id="home">
 
     <head>
         <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     @yield('content')
 
     @include('frontend.layouts.footer')
-
+    
     <script src="/fontawesome-free/js/fontawesome.min.js"></script>
     <script src="/jquery/jquery-3.5.1.min.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
@@ -104,6 +104,34 @@
           });
           
     </script>
+    {{-- burger bar and animation --}}
+    <script>
+        $(document).ready(function(){ 
+            var touch 	= $('#resp-menu');
+            var menu 	= $('.menu');
+         
+            $(touch).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 500 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+            
+            $('.burger-bar').on('click', function(){
+                $('.burger-bar .bars:nth-child(2)').toggleClass('animate');
+                 $('.burger-bar .bars:nth-child(1)').toggleClass('transformBurgerBarone');
+                 $('.burger-bar .bars:nth-child(3)').toggleClass('transformBurgerBarthree');
+             });
+        });
+       
+    </script>
+
+    
 </body>
 
 </html>
