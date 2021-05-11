@@ -58,7 +58,7 @@ Route::group(['namespace' => 'frontend'], function () {
     });
     // sivitas
     Route::group(['prefix' => 'sivitas', 'namespace' => 'sivitas'], function () {
-        Route::get('/Mahasiswa', 'MhsController@index');
+        Route::get('/mahasiswa', 'MhsController@index');
         Route::group(['prefix' => 'student', 'namespace' => 'student'], function () {
         });
         
@@ -113,7 +113,7 @@ Route::group(['namespace' => 'frontend'], function () {
 Route::group(['namespace' => 'backend'], function () {
     Route::group(['prefix' => 'admin', 'namespace' => 'admin', 'middleware' => ['auth', 'admin']], function () {
         Route::post('/images', 'PostController@uploadImage')->name('post.image');
-        Route::get('/', 'AdminController@index');
+        Route::get('/dashboard', 'AdminController@index');
         Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
             Route::get('/dosen', 'DosenController@index')->name('backend.profil.dosen.index');
             Route::post('/dosen-store', 'DosenController@store')->name('backend.profil.dosen.store');

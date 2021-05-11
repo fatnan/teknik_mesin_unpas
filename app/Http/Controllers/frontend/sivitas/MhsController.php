@@ -4,14 +4,14 @@ namespace App\Http\Controllers\frontend\sivitas;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-use App\student;
+use App\Student;
 class MhsController extends Controller
 {
     
     public function index()
     {
-        $mahasiswa = student::all();
-        return view('frontend.sivitas.Mahasiswa',['mahasiswa' => $mahasiswa]);
+        $mahasiswa = Student::all();
+        return view('frontend.sivitas.mahasiswa',['mahasiswa' => $mahasiswa]);
     }
 
    

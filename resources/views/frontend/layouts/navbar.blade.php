@@ -125,7 +125,7 @@
                 <li><a class="nav-link" href="#">SIVITAS</a>
                 <ul class="sub-menu">
                     <li>                      
-                        <a class="dropdown-item" href="{{url('/sivitas/Mahasiswa')}}">MAHASISWA</a>
+                        <a class="dropdown-item" href="{{url('/sivitas/mahasiswa')}}">MAHASISWA</a>
                     </li>
                     <li>                        
                         <a class="dropdown-item" href="login.html">ALUMNI</a>
