@@ -5,27 +5,9 @@
 @endsection
 
 @section('content')
-<main>
-    <section class="section-navbar-header"></section>
-    <section class="section-navbar-content">
-        <div class="container">
-            <div class="row">
-                <div class="col p-3">
-                    <nav>
-                        <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="breadcrumb-navbar">
-                                <a href="{{ url ('/berita/index') }}" class="Berita-Utama active">Berita Utama</a>
-                                <a href="{{ url ('/berita/kategori/prodi/index') }}" class="Penelitian">Prodi</a>
-                                <a href="{{ url ('/berita/kategori/akademik/index') }}" class="Akademik">Akademik</a>
-                                <a href="{{ url ('/berita/kategori/penelitian/index') }}" class="Institusi">Penelitian</a>
-                                <a href="{{ url ('/berita/kategori/pengabdian/index') }}" class="Profil">Pengabdian Pada Masyarakat</a>
-                            </li>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    <section class="section-details-header" style="margin-top: -30px; background: #fff"></section>
-    <section class="section-details-content" style="background: #fff">
+    <main>
+      <section class="section-details-header"></section>
+      <section class="section-details-content">
         <div class="container">
             <div class="row">
                 <div class="col p-3">
@@ -51,20 +33,45 @@
                         </div>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                Beranda
+                                Sivitas
+                            </li>
+                            <li class="breadcrumb-item">
+                                Dosen
                             </li>
                             <li class="breadcrumb-item active">
-                                Prodi
+                                Ir. Toto Supriyono, MT.
                             </li>
-                        </ol>
+                          </ol>
                     </nav>
                 </div>
-                <div class="container">
-                    <hr style="margin-top: -30px">
-                </div>
             </div>
-        </div>
-    </section>
-    
-</main>
+          </div>
+         {{--  card  --}}
+          <div class="row justify-content-center">
+            <div class="col-sm-8 pl-lg-3">
+              <div class="section section-details-01">
+                <div class="card-wrapper">
+                  <div class="row justify-content-center">
+                    <div class="card col-xs-6 col-md-4">
+                      <img class="card-img-top p-2" src="/images/toto-supriyono.jpg">
+                      <div class="list">
+                        <ul style="list-style-type:none;">
+                          <li>Nama :</li>
+                          <li>Jabtan :</li>
+                          <li>Email :</li>
+                          <li>Bidang Keahlian :</li>
+                          <p> Pendidikan </p>
+                          <li>S1</li>
+                          <li>S2 :</li>
+                          <li>S3 :</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+          </div>
+      </section>
+    </main>
 @endsection

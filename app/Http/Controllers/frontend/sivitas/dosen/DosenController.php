@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\frontend\sivitas;
+namespace App\Http\Controllers\frontend\sivitas\dosen;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

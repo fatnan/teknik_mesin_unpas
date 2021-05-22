@@ -59,7 +59,9 @@ Route::group(['namespace' => 'frontend'], function () {
     // sivitas
     Route::group(['prefix' => 'sivitas', 'namespace' => 'sivitas'], function () {
         Route::get('/mahasiswa', 'MhsController@index');
-        Route::group(['prefix' => 'student', 'namespace' => 'student'], function () {
+        Route::group(['prefix' => 'dosen', 'namespace' => 'dosen'], function () {
+            Route::get('/index', 'DosenController@index');
+            Route::get('/page', 'PageController@index');
         });
         
     });
@@ -74,10 +76,8 @@ Route::group(['namespace' => 'frontend'], function () {
         Route::get('/Penghargaan-di-IMI-Jabar-Awards-2019', 'PenghargaanDiIMIJabarAwards2019Controller@index');
         Route::get('/Rapat-Perbaikan-SITI-SAPTO-Fakultas-Teknik-UNPAS', 'RapatPerbaikanSitiSaptoFakultasTeknikUnpasController@index');
         Route::get('/selamat-atas-keberhasilan-prodi-di-fakultas-teknik-unpas', 'SelamatAtasKeberhasilanProdiDiFakultasTeknikUnpasController@index');
+        Route::get('/index', 'BerandaBeritaController@index');
         Route::group(['prefix' => 'kategori', 'namespace' => 'kategori'], function () {
-            Route::group(['prefix' => 'home', 'namespace' => 'home'], function () {
-                Route::get('/beranda-berita', 'BerandaBeritaController@index');
-            });
             Route::group(['prefix' => 'prodi', 'namespace' => 'prodi'], function () {
                 Route::get('/index', 'ProdiController@index');
             });

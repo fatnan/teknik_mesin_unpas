@@ -45,8 +45,8 @@
                 <div class="row">
                     <div class="col-sm-8 pl-lg-3">
                         <div class="section section-details-02">
-                            <h1><?=ucfirst($jenis)</h1>
-                            <?=$content?>
+                            <h1> <?= ucfirst($jenis) ?> </h1>
+                            <?= $content?>
                         </div>
                     </div>
                     <div class="col-lg-4">
