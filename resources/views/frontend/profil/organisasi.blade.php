@@ -45,26 +45,8 @@
                 <div class="row">
                     <div class="col-sm-8 pl-lg-3">
                         <div class="section section-details-03">
-                            <h1>Organisasi
-                            </h1>
-                            <img src="frontend/images/bagan.PNG" alt="" width="100%">
-
-                            <h5>Ketua Jurusan</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam numquam et quos deleniti
-                                fugit? Ex impedit totam explicabo eveniet odio molestiae! Earum necessitatibus unde
-                                corporis. Saepe blanditiis dolore officia laboriosam. </p>
-                            <h5>Pembina</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem repellendus aut
-                                voluptatibus inventore repudiandae est consequuntur quisquam quae, aperiam eos
-                                recusandae quas vero beatae, deserunt praesentium soluta quaerat laudantium? </p>
-                            <h5>Sekretaris Jurusan</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi tenetur magni
-                                voluptate vero sunt, ullam esse culpa architecto officiis suscipit eos, illum modi,
-                                debitis laborum incidunt veniam. Atque, consequatur! </p>
-                            <h5>Pembina</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, possimus. Commodi, sit
-                                modi, nulla omnis culpa fugit consectetur quasi, quis perferendis laborum deleniti odio
-                                iste quo aspernatur veniam reprehenderit deserunt! </p>
+                            <h1><?=ucfirst($jenis)?></h1>
+                            <?=$content?>
                         </div>
                     </div>
                     <div class="col-lg-4">

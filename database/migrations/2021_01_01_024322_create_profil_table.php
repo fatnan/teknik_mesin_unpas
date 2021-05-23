@@ -15,8 +15,11 @@ class CreateProfilTable extends Migration
     {
         Schema::create('profil', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title');
             $table->string('jenis')->unique();
+            $table->string('slug');
             $table->longText('content');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

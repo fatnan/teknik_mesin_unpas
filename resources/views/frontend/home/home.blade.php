@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+
     <header>
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -38,7 +39,7 @@
                 <span class="fa fa-chevron-circle-left" style="font-size: 40px;"></span>
             </a>
             <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <span class="fa fa-chevron-circle-right" style="font-size:40px;"></span>
+                <span class="fa fa-chevron-circle-right" style="font-size: 40px;"></span>
             </a>
         </div>
     </header>
@@ -66,111 +67,43 @@
         <!-- content item -->
         <section class="section-content-item" id="contenItem">
             <div class="container">
-                <div class="section-content-news row justify-content-center">
+                <div class="section-content-news row justify-content-center"> 
                     <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">              
-                            <div class="item-img">
-                                <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
-                                    <img src="/images/banner-pendaftaran-MHS-baru.jpeg" alt="" width="100%"
-                                        height="200px">
-                                </a>
-                            </div>
-                            <div class=" item-judul">
-                                <a>Pendaftaran Mahasiswa Baru Fakultas Teknik UNPAS</a>                    
-                                <ul class="list-unstyled">
-                                    <li class="post-date">
-                                        <i class="far fa-calendar-alt"
-                                            style="color: #333; font-weight: lighter; font-size: small;"> 25 September
-                                            2020</i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="card-item">         
+                                    <div class="item-img">
+                                        <a href="/berita/pmb-fakultas-teknik-universitas-pasundan">
+                                            <img src="" alt="" width="100%"
+                                                height="200px">
+                                        </a>
+                                    </div>
+                                    <div class=" item-judul">
+                                        <a> </a>                    
+                                        <ul class="list-unstyled">
+                                            <li class="post-date">
+                                                <i class="far fa-calendar-alt"
+                                                    style="color: #333; font-weight: lighter; font-size: small;">
+                                              
+                                                </i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="btn btn-details-content">
+                                                <a href="">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">
-                                <img src="/images/IIMS_LISTRIK1_MABUA_MEDIA.jpg" alt="" width="100%"
-                                    height="200px">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Mobil Balap listrik Karya Mahasiswa Unpas Bandung Mejeng di IIMS</a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 12 Agustus 2020</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/Mobil-Listrik-Karya-Mahasiswa-Mesin-Unpas">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">
-                                <img src="/images/Screen-Shot-2019-07-26-at-10.36.57-300x229.png" alt=""
-                                    width="100%">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Teknik Mesin Fakultas Teknik Unpas, Ciptakan Traktor Portable
-                                </a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 26 Juli 2019</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/teknik-mesin-unpas-ciptakan-traktor-portable">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="card-item">
-                            <div class="item-img">
-                            <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">
-                                <img src="/images/swipper.jpg" alt="" width="100%">
-                            </a>
-                            </div>
-                            <div class="item-judul">
-                                <a>Projek Sweeper Mahasiswa Teknik Mesin Unpas</a>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li class="post-date">
-                                    <i class="far fa-calendar-alt"
-                                        style="color: #333; font-weight: lighter; font-size: small;"> 28 Februari 2020</i>
-                                </li>
-                            </ul>
-                            <div class="container">
-                                <div class="row">
-                                    <a href="/berita/Projek-Sweeper-Mahasiswa-Mesin">Baca Berita <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                </div>
-            </div>
+               
             <!-- selengkapnya -->
             <div class="container">
                 <div class="section-details row justify-content-center">
                     <div class="details-button mt-5">
-                        <a href="/berita/kategori/home/beranda-berita" class="btn btn-details btn-sm ">
+                        <a href="/berita/index" class="btn btn-details btn-sm ">
                             Selengkapnya
                         </a>
                     </div>
@@ -275,7 +208,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="sertifikat.">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -289,7 +222,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title" ">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -303,7 +236,7 @@
                                             <img src="/images/KAN21-300x200.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="flip-card-back">
-                                            <a href="">
+                                            <a href="/penghargaan/award">
                                                 <h5 class="card-title">Akreditasi BAN-PT</h5>
                                             </a>
                                         </div>
@@ -313,14 +246,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="section-details row justify-content-center">
-                        <div class="details-button mt-5">
-                            <a href="/berita/penghargaan" class="btn btn-details btn-sm ">
-                                Selengkapnya
-                            </a>
-                        </div>
-                    </div>
             </section>
         </section>
 
@@ -342,10 +267,10 @@
                 <div class="row justify-content-center">
                     <div class="card-deck justify-content-center">
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/berita/universitas-pasundan-profil">
+                            <a href="/videos/profil-universitas-pasundan">
                                 <img class="card-01" src="/images/profil-unpas.png" alt="" width="100%">
                             </a>
-                            <a class="link" href="universitas-pasundan-profil" style="font-weight:bold;">Profil
+                            <a class="link" href="/videos/profil-universitas-pasundan" style="font-weight:bold;">Profil
                                 Universitas
                                 Pasundan Bandung</a>
                             <p style="color: #ddd;">Universitas Pasundan (UNPAS) berdiri pada tanggal 14 November
@@ -354,11 +279,11 @@
 
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="/frontend/berita/pendaftaran-wisuda-online-UNPAS">
+                            <a href="/videos/pendaftaran-wisuda-online-UNPAS">
                                 <img class="card-01" src="/images/image-pendaftaran.png" alt="" width="100%">
                             </a>
 
-                            <a class="link" href="pendaftaran-wisuda-online-UNPAS"
+                            <a class="link" href="/videos/pendaftaran-wisuda-online-UNPAS"
                                 style="font-weight:bold;">Pendaftaran Wisuda Online
                                 UNPAS</a>
                             <p style="color: #ddd;">Prosedur pendaftaran wisuda online Fakultas Teknik Universitas
@@ -369,15 +294,7 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="container">
-                <div class="section-details row justify-content-center">
-                    <div class="details-button mt-5">
-                        <a href="konten-video" class="btn btn-details-02  ">
-                            Selengkapnya
-                        </a>
-                    </div>
-                </div>
+        </div>
         </section>
 
         <!-- partner -->
