@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="section-details row justify-content-center">
                     <div class="details-button mt-5">
-                        <a href="/berita/kategori/home/beranda-berita" class="btn btn-details btn-sm ">
+                        <a href="/berita/index" class="btn btn-details btn-sm ">
                             Selengkapnya
                         </a>
                     </div>
