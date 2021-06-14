@@ -63,7 +63,8 @@
          <form action="{{ url('logout') }}" method="POST">
            @csrf
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="#">Logout</a>
+          <button class="btn btn-primary" href="#">Logout</button>
+         </form>
         </div>
       </div>
     </div>
@@ -90,7 +91,7 @@
                         <div class="form-group">
                         <label class="control-label col-md-4">Content : </label>
                         <div class="col-md-8">
-                            <input type="text" name="content" id="content" class="form-control" />
+                            <input type="text" name="isi" id="isi" class="form-control" />
                         </div>
                         </div>
                         <br />

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Berita;
 use DataTables;
+use Validator;
 
 
 class BeritaController extends Controller
@@ -17,7 +18,8 @@ class BeritaController extends Controller
             $data = Berita::latest()->get();
             return DataTables::of($data)
                     ->addColumn('action', function($data){
-                        $button = '<button type="button" name="edit" id="'.$data->id.'" class="edit btn btn-primary btn-sm">Edit</button>';
+                        // $button = '<button type="button" name="edit" id="'.$data->id.'" class="edit btn btn-primary btn-sm">Edit</button>';
+                        $button = '<a href="berita/'.$data->id.'/edit" name="edit" class="edit btn btn-primary btn-sm">Edit</a>';
                         $button .= '&nbsp;&nbsp;&nbsp;<button type="button" name="edit" id="'.$data->id.'" class="delete btn btn-danger btn-sm">Delete</button>';
                         return $button;
                     })
@@ -34,7 +36,13 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        //
+        $berita['judul']="";
+        $berita['isi'] = "";
+        $berita['hidden_id'] = "";
+        $berita['title']="Create Berita";
+        $berita['store']="berita.store";
+
+        return view('backend.admin.berita.edit',$berita);
     }
 
     /**
@@ -47,24 +55,25 @@ class BeritaController extends Controller
     {
         $rules = array(
             'judul'    =>  'required',
-            'content'     =>  'required'
+            'isi'     =>  'required'
         );
 
         $error = Validator::make($request->all(), $rules);
 
         if($error->fails())
         {
-            return response()->json(['errors' => $error->errors()->all()]);
+            return redirect()->back()->withInput()->withErrors($error);
+            // return back()->withErrors($error)->withInput($request->input());
         }
 
         $form_data = array(
             'judul'        =>  $request->judul,
-            'content'         =>  $request->content
+            'isi'         =>  $request->isi
         );
 
         Berita::create($form_data);
 
-        return response()->json(['success' => 'Data Added successfully.']);
+        return redirect()->route('berita.index');
 
     }
 
@@ -87,11 +96,23 @@ class BeritaController extends Controller
      */
     public function edit($id)
     {
-        if(request()->ajax())
-        {
-            $data = Berita::findOrFail($id);
-            return response()->json(['result' => $data]);
+        // if(request()->ajax())
+        // {
+        //     $data = Berita::findOrFail($id);
+        //     return response()->json(['result' => $data]);
+        // }
+
+        $berita=Berita::where('id',$id)->first();
+        if($berita==null){
+            $berita=[
+                'isi' => ""
+            ];
         }
+        $berita['title']="Edit Berita";
+        $berita['store']="berita.update";
+        $berita['hidden_id']=$id;
+
+        return view('backend.admin.berita.edit',$berita);
     }
 
     /**
@@ -105,24 +126,24 @@ class BeritaController extends Controller
     {
         $rules = array(
             'judul'        =>  'required',
-            'content'         =>  'required'
+            'isi'         =>  'required'
         );
 
         $error = Validator::make($request->all(), $rules);
 
         if($error->fails())
         {
-            return response()->json(['errors' => $error->errors()->all()]);
+            return redirect()->back()->withInput()->withErrors($error);
         }
 
         $form_data = array(
             'judul'    =>  $request->judul,
-            'content'     =>  $request->content
+            'isi'     =>  $request->isi
         );
 
         Berita::whereId($request->hidden_id)->update($form_data);
 
-        return response()->json(['success' => 'Data is successfully updated']);
+        return redirect()->route('berita.index');
 
     }
 
