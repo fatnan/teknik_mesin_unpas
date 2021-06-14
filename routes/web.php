@@ -113,7 +113,10 @@ Route::group(['namespace' => 'frontend'], function () {
 Route::group(['namespace' => 'backend'], function () {
     Route::group(['prefix' => 'admin', 'namespace' => 'admin', 'middleware' => ['auth', 'admin']], function () {
         Route::post('/images', 'PostController@uploadImage')->name('post.image');
-        Route::get('/dashboard', 'AdminController@index');
+        Route::get('/', function () {
+            return redirect()->route('admin.dashboard');
+        });
+        Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
         Route::group(['prefix' => 'profil', 'namespace' => 'profil'], function () {
             Route::get('/dosen', 'DosenController@index')->name('backend.profil.dosen.index');
             Route::post('/dosen-store', 'DosenController@store')->name('backend.profil.dosen.store');
@@ -173,8 +176,9 @@ Route::group(['namespace' => 'backend'], function () {
         // Route::resource('berita', 'BeritaController');
         Route::group(['prefix' => 'berita', 'namespace' => 'berita'], function () {
             Route::get('/', 'BeritaController@index')->name('berita.index');
-            Route::get('berita/{id}/edit', 'BeritaController@edit')->name('berita.edit');
-            Route::get('berita/destroy/{id}', 'BeritaController@destroy')->name('berita.delete');
+            Route::get('create', 'BeritaController@create')->name('berita.create');
+            Route::get('{id}/edit', 'BeritaController@edit')->name('berita.edit');
+            Route::get('destroy/{id}', 'BeritaController@destroy')->name('berita.delete');
             Route::post('berita/store', 'BeritaController@store')->name('berita.store');
             Route::post('berita/update', 'BeritaController@update')->name('berita.update');
         });
