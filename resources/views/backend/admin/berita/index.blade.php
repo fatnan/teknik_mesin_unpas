@@ -6,7 +6,8 @@
         {{-- <h3 align="center">How to Delete or Remove Data From Mysql in Laravel 6 using Ajax</h3> --}}
         <br />
         <div align="right">
-            <button type="button" name="create_record" id="create_record" class="btn btn-success btn-sm">Create Record</button>
+            {{-- <button type="button" name="create_record" id="create_record" class="btn btn-success btn-sm">Create Record</button> --}}
+            <a href={{route('berita.create')}} name="create_record" id="create_record">Create Berita</a>
         </div>
         <br />
         <div class="table-responsive">
@@ -42,75 +43,77 @@
                 ]
             });
 
-            $('#create_record').click(function(){
-                $('.modal-title').text('Add New Record');
-                $('#action_button').val('Add');
-                $('#action').val('Add');
-                $('#form_result').html('');
+            // $('#create_record').click(function(){
+            //     $('.modal-title').text('Add New Record');
+            //     $('#action_button').val('Add');
+            //     $('#action').val('Add');
+            //     $('#form_result').html('');
+            //     // $('#type_action').val('berita.store');
+            //     $('#formModal').modal('show');
+            // });
 
-                $('#formModal').modal('show');
-            });
+            // $('#berita_form').on('submit', function(event){
+            //     event.preventDefault();
+            //     var action_url = '';
 
-            $('#berita_form').on('submit', function(event){
-                event.preventDefault();
-                var action_url = '';
+            //     if($('#action').val() == 'Add')
+            //     {
+            //         action_url = "{{ route('berita.store') }}";
+            //     }
 
-                if($('#action').val() == 'Add')
-                {
-                    action_url = "{{ route('berita.store') }}";
-                }
+            //     if($('#action').val() == 'Edit')
+            //     {
+            //         action_url = "{{ route('berita.update') }}";
+            //     }
 
-                if($('#action').val() == 'Edit')
-                {
-                    action_url = "{{ route('berita.update') }}";
-                }
+            //     $.ajax({
+            //         url: action_url,
+            //         method:"POST",
+            //         data:$(this).serialize(),
+            //         dataType:"json",
+            //         success:function(data)
+            //         {
+            //             var html = '';
+            //             if(data.errors)
+            //             {
+            //                 html = '<div class="alert alert-danger">';
+            //                 for(var count = 0; count < data.errors.length; count++)
+            //                 {
+            //                     html += '<p>' + data.errors[count] + '</p>';
+            //                 }
+            //                 html += '</div>';
+            //             }
+            //             if(data.success)
+            //             {
+            //                 html = '<div class="alert alert-success">' + data.success + '</div>';
+            //                 $('#berita_form')[0].reset();
+            //                 $('#berita_table').DataTable().ajax.reload();
+            //             }
+            //             $('#form_result').html(html);
+            //         }
+            //     });
+            // });
 
-                $.ajax({
-                    url: action_url,
-                    method:"POST",
-                    data:$(this).serialize(),
-                    dataType:"json",
-                    success:function(data)
-                    {
-                        var html = '';
-                        if(data.errors)
-                        {
-                            html = '<div class="alert alert-danger">';
-                            for(var count = 0; count < data.errors.length; count++)
-                            {
-                                html += '<p>' + data.errors[count] + '</p>';
-                            }
-                            html += '</div>';
-                        }
-                        if(data.success)
-                        {
-                            html = '<div class="alert alert-success">' + data.success + '</div>';
-                            $('#berita_form')[0].reset();
-                            $('#berita_table').DataTable().ajax.reload();
-                        }
-                        $('#form_result').html(html);
-                    }
-                });
-            });
-
-            $(document).on('click', '.edit', function(){
-                var id = $(this).attr('id');
-                $('#form_result').html('');
-                $.ajax({
-                    url :"/berita/"+id+"/edit",
-                    dataType:"json",
-                    success:function(data)
-                    {
-                        $('#judul').val(data.result.judul);
-                        $('#content').val(data.result.content);
-                        $('#hidden_id').val(id);
-                        $('.modal-title').text('Edit Record');
-                        $('#action_button').val('Edit');
-                        $('#action').val('Edit');
-                        $('#formModal').modal('show');
-                    }
-                })
-            });
+            // $(document).on('click', '.edit', function(){
+            //     var id = $(this).attr('id');
+            //     // url :"/admin/berita/"+id+"/edit",
+            //     // $('#form_result').html('');
+            //     // $.ajax({
+            //     //     url :"/admin/berita/"+id+"/edit",
+            //     //     dataType:"json",
+            //     //     success:function(data)
+            //     //     {
+            //     //         console.log(data);
+            //     //         $('#judul').val(data.result.judul);
+            //     //         $('#isi').val(data.result.isi);
+            //     //         $('#hidden_id').val(id);
+            //     //         $('.modal-title').text('Edit Record');
+            //     //         $('#action_button').val('Edit');
+            //     //         $('#action').val('Edit');
+            //     //         // $('#formModal').modal('show');
+            //     //     }
+            //     // })
+            // });
 
             var berita_id;
 
