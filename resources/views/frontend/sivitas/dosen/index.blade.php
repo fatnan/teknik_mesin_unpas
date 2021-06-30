@@ -60,17 +60,17 @@
             <div class="section-title-content">
                 <div class="row mt-5 justify-content-center">
                     <div class="col-md-4">
-                       <h1 class="text-center">DAFTAR DOSEN</h1>
-                       <h5 class="text-center" style="font-size: medium">Daftar Dosen Pengajar Teknik Mesin Unpas</h5>
+                       <h1 class=" title-01 text-center " style="font-size: 48px">DAFTAR DOSEN</h1>
+                       <hr style="max-inline-size: 50%;  border: 1px solid black; border-radius:20px; outline-width: 20px;  background-color: black;">
                 </div>
             </div>
             {{--  card  --}}
             <div class="row mt-5">
                 <div class="col-sm pl-lg-3 mt-5">
                     <div class="section section-details-01">
-                        <div class="card-deck-wrapper">
-                            <div class="card-deck justify-content-center">
-                                <div class="card card-inverse-01 text-center col-xs-6 col-sm-3 ">
+                        <div class="card-deck-wrapper" style="background:#F3F3F3">
+                            <div class="card-deck justify-content-center" style=" padding:10%;">
+                                <div class="card card-inverse-01 text-center col-xs-6 col-sm-3" style="">
                                     <div class="card-block">
                                         <img class="card-img-top p-2" src="/images/toto-supriyono.jpg" alt="Card image cap">
                                         <div class="card-body">
