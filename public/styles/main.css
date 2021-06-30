@@ -746,8 +746,8 @@ body {
     background-color: #fff;
     padding-top: 25px;
     padding-bottom: 20px;
-    -webkit-box-shadow: 3px 10px 10px #00000015;
-    box-shadow: 3px 10px 10px #00000015;
+    -webkit-box-shadow: 3px 5px 5px #00000015;
+    box-shadow: 3px 5px 5px #00000015;
     border-radius: 5px;
 }
 
@@ -1876,6 +1876,13 @@ button:hover {
 
 iframe {
     border: none !important;
+}
+
+/* sivitas/dosen */
+@media (max-width: 380px) {
+    .section-title-content .title-01 {
+        font-size: 40px !important;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////

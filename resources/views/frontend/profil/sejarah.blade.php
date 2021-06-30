@@ -53,11 +53,10 @@
                     <div class="col-lg-4">
                         <div class="section section-right-01">
                             <ul class="list-unstyled">
-                                <h3>Terbaru</h3>
+                                
                                 <li><a href="sejarah.html">Sejarah</a>
-                                    <hr>
                                 </li>
-
+                                <hr>
                                 <li><a href="">Visi & Misi</a>
                                 </li>
                                 <hr>
@@ -75,7 +74,7 @@
                                 <hr>
                                 <li><a href="">Sarana & Prasarana</a>
                                 </li>
-                                <hr>
+                               
                             </ul>
                         </div>
                     </div>

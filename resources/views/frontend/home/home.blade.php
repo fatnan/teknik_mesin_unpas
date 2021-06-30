@@ -317,7 +317,6 @@
                 </section>
             </div>
         </section>
-
         <!-- scroll to top button -->
         <a class="top-bar hide" href="" id="myBtn">
             <span class="fas fa-angle-up fa-2x"></span>
